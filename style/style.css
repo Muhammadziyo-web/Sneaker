@@ -558,4 +558,14 @@ button {
     justify-content: center;
     align-items: center;
   }
+}
+@media only screen and (min-width: 2000px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
