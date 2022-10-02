@@ -196,7 +196,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 150px;
-  background: rgba(0, 0, 0, 0.097);
+  background: rgba(0, 0, 0, 0.0980392157);
   box-sizing: content-box;
   padding: 13px 0px;
   border-radius: 7px;
@@ -324,7 +324,7 @@ button {
   display: none;
 }
 
-@media only screen and (max-width: 649px) {
+@media only screen and (max-width: 739px) {
   .container {
     width: 90%;
   }
@@ -332,6 +332,7 @@ button {
     display: block;
     z-index: 3;
     width: 28px;
+    margin-right: 5px;
   }
   .left ul {
     position: absolute;
@@ -438,6 +439,9 @@ button {
   .txt p {
     width: 100%;
     max-width: 310px;
+  }
+  .right {
+    gap: 10px;
   }
 }
 .center {
@@ -568,4 +572,41 @@ button {
     width: 1440px;
     margin: 0 auto;
   }
+}
+.check1 {
+  height: 30px;
+  width: 55px;
+  appearance: none;
+  background: rgba(255, 140, 140, 0.5);
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.check1::after {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.342);
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: all 0.4s ease;
+}
+
+.check1:checked::after {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.363);
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 28px;
+}
+
+.check1:checked {
+  background-color: rgba(60, 197, 56, 0.5);
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

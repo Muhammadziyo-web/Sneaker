@@ -234,6 +234,50 @@ $('.close-modal').addEventListener('click',()=>{
    $('.modal-preview').style.display = 'none'
 })
 
+$('.check1').addEventListener('click',()=>{
+   if($('.check1').checked){
+      $('body').style.backgroundColor = 'black'      
+      $('*').style.color = 'white'
+      $('.container').style.borderBottom = '1px solid #ffffff2b'
+      $('.basket').style.backgroundColor = '#535151'
+      $('.count').style.backgroundColor = '#535151'
+      $('.basket').style.boxShadow = 'none'
+      $('.b-head').style.borderBottom = '1px solid #ffffff2b'
+      $('.logo-site').setAttribute('src','images/white-logo.svg')
+      $('.korzinka').setAttribute('src','images/karzinka-white.svg')
+      $('.close').setAttribute('src','images/close-white.svg')
+      
+      if($('body').offsetWidth<739){
+         console.log('hello');
+         $('.menuP').style.backgroundColor = '#484646'
+      }else{
+         $('.menuP').style.backgroundColor = 'transparent'
+      }
+      
+      
+   }else{
+      $('.logo-site').setAttribute('src','images/logo.svg')
+      $('body').style.backgroundColor = 'white'      
+      $('.container').style.borderBottom = ' 1px solid #0000002b'
+      $('.b-head').style.borderBottom = '1px solid rgba(0, 0, 0, 0.114)'
+      $('.basket').style.boxShadow = 'rgba(149, 157, 165, 0.424) 0px 8px 24px'
+      $('.basket').style.backgroundColor = '#fff'
+      $('.korzinka').setAttribute('src','images/icon-cart.svg')
+      $('.close').setAttribute('src','images/icon-close.svg')
+      $('.count').style.backgroundColor = '#00000019'
+      $('.menuP').style.backgroundColor = 'none'
+      if($('body').offsetWidth<739){
+         console.log('hello');
+      }else{
+         $('.menuP').style.backgroundColor = '#fff'
+         
+      }
+      $('*').style.color = 'black'
+      
+   }
+})
+
+
 
 
 
